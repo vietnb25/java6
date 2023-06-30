@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        var sv = {
+            "name": "ABCXYZ",
+            "gender": true,
+            "marks": 7.5,
+            "contact":{
+                "email": "hihi@gmail.com",
+                "sdt": "0123"
+            }
+        }
+
+        console.log(sv)
+        sv.name = sv['name'].toUpperCase()
+        console.log(sv.name, sv.contact.email)
+        for(var key in sv){
+            console.log(key, sv[key])
+        }
+        var text = JSON.stringify(sv)
+        console.log(text)
+
+        var object = JSON.parse(text)
+        console.log(object, object.name)
+    </script>
+</body>
+</html>
