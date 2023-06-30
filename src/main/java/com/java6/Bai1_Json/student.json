@@ -1,0 +1,9 @@
+{
+  "name": "ABCXYZ",
+  "gender": true,
+  "marks": 7.5,
+  "contact":{
+    "email": "hihi@gmail.com",
+    "sdt": "0123"
+  }
+}
